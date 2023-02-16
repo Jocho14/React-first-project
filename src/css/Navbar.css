@@ -1,0 +1,65 @@
+nav {
+    font-size: large;
+    height: auto;
+    max-height: 55px;
+    position: relative;
+    padding: 20px 36px;
+    width: 100%;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav--right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav--logo {
+    width: 50px;
+    background-color: transparent;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    height: 100%;
+}
+
+li{
+    margin: 10px;
+    font-weight: 600;
+}
+
+ul > li {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  ul > li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  ul > li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .nav--shoppingCartLogo {
+    width: 30px;
+  }
+
