@@ -1,25 +1,29 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import AccountPanel from './components/AccountPanel'
-import ProductCard from './components/ProductCard'
-import FirebaseSnapshot from './FirebaseSnapshot'
+import Products from './components/Products'
+import Feature from './components/Feature'
+import ProductDetail from './components/ProductDetail'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+
 
 export default function App() {
 
-  const cards = FirebaseSnapshot().map(item => {
-      return (
-        <ProductCard 
-              item = {item}
-        />
-      )})
-
   return (
-    <div className="App">
-      <AccountPanel />
-      <Navbar />
-      <div className="product-card-list">
-        {cards}
+    <BrowserRouter>
+      <div className="App">
+        <AccountPanel />
+        <Navbar />
+       
       </div>
-    </div>
+      <Routes>
+        <Route path="/feature" element={<Feature />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductDetail />} />
+        {/* <Route path="/store" element={} />
+        <Route path="/gallery" element={} />
+        <Route path="/help" element={} /> */}
+      </Routes>
+    </BrowserRouter>
   )
 }

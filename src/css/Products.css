@@ -38,3 +38,10 @@ figure {
 	-webkit-transform: rotate(0) scale(1);
 	transform: rotate(0) scale(1);
 }
+
+.product-card-list {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 60px 0px 650px;
+    flex-wrap: wrap;
+  }
