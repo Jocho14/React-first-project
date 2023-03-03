@@ -15,7 +15,7 @@ import {
     limit,
   } from 'firebase/firestore';
 import db from '../firebase'
-import '../css/Products.css'
+import '../Products-css/Products.css'
 
 export default function Products(){
     const collectionRef = collection(db, 'products');
@@ -44,7 +44,7 @@ export default function Products(){
 
     const productElements = products.map(item =>(
         <div key={item.id} className="product-card">
-                <Link to={`/products/${item.id}`}>
+                <Link to={`/products/${item.id}`} className="product-link">
                 <div className="hover-rotate">
                     <figure>
                         <img src={item.imageURL} alt="image"/>

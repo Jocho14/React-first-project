@@ -15,7 +15,7 @@ import {
     limit,
   } from 'firebase/firestore';
 import db from '../firebase'
-import '../css/ProductDetail.css'
+import '../Products-css/ProductDetail.css'
 
 export default function ProductDetail(){
     const [product, setProduct] = React.useState([]);
@@ -52,6 +52,12 @@ export default function ProductDetail(){
       }
 
     return (
-        <h1>{product.title}</h1>
+        <div className="product-detail-wrapper">
+            <div className="inner-wrapper">
+                <img src={product.imageURL} className="image"/>
+                <h1 className="title">{product.title}</h1>
+            </div>  
+        </div>
+        
     )
 }

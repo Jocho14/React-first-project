@@ -1,0 +1,10 @@
+.product-detail-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-wrapper {
+    display: flex;
+    flex-direction: column;
+}

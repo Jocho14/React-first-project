@@ -31,7 +31,6 @@ ul {
 
 li{
     margin: 10px;
-    font-weight: 600;
 }
 
 ul > li {
@@ -53,6 +52,7 @@ ul > li {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
+
   
   ul > li:hover::after {
     transform: scaleX(1);
@@ -62,4 +62,20 @@ ul > li {
   .nav--shoppingCartLogo {
     width: 30px;
   }
+
+  .feature-link, .products-link {
+    text-decoration: none;
+  }
+
+.active-link, .not-active-link {
+    text-decoration: none;
+    color: black;
+  }
+
+.active-link {
+    font-weight: 1000;
+    text-shadow: 0 0 0.5px black;
+}
+
+
 

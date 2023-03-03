@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/AccountPanel.css'
+import '../pages-css/AccountPanel.css'
 
 import signInIcon from "../images/signInIcon.png"
 import shoppingCartIcon from "../images/shoppingCartIcon.png"

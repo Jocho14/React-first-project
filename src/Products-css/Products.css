@@ -15,7 +15,10 @@ figure {
 
 .product-card {
     margin: 0px 20px;
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
+    width: 100%;
+    min-height: 100%;
+
 }
 
 .gender {
@@ -41,7 +44,21 @@ figure {
 
 .product-card-list {
     display: flex;
-    flex-direction: row;
-    margin: 20px 60px 0px 650px;
+    justify-content: space-between;
     flex-wrap: wrap;
+    /* margin: 20px 0px 0px 650px; */
+  }
+
+@media (min-width:768px) { .product-card-list { padding: 4% 8% } }
+
+@media (min-width:768px) {
+    .product-card { width: 29% }
+}
+
+@media (max-width:767px) { .container-block { padding: 11% 8% } }
+
+
+
+  .product-link {
+        text-decoration: none;
   }
