@@ -1,11 +1,11 @@
 import './App.css'
-import AccountPanel from './components/AccountPanel'
-import Products from './components/Products'
-import Feature from './components/Feature'
-import ProductDetail from './components/ProductDetail'
+import AccountPanel from './pages/AccountPanel'
+import Products from './Products/Products'
+import Feature from './pages/Feature'
+import ProductDetail from './Products/ProductDetail'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from './comps/Layout'
-import Header from './comps/Header'
+import Layout from './components/Layout'
+import Header from './components/Header'
 
 
 export default function App() {

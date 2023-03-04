@@ -1,3 +1,12 @@
+span {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+}
+
 .product-detail-wrapper {
     display: flex;
     justify-content: center;

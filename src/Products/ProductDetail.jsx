@@ -1,5 +1,5 @@
 import React from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import {
     doc,
     onSnapshot,
@@ -52,12 +52,19 @@ export default function ProductDetail(){
       }
 
     return (
-        <div className="product-detail-wrapper">
-            <div className="inner-wrapper">
-                <img src={product.imageURL} className="image"/>
-                <h1 className="title">{product.title}</h1>
-            </div>  
+        <div className="main-wrapper">
+            <Link to=".."
+                relative="path">
+                <span> ← Back to products</span>
+            </Link>
+            <div className="product-detail-wrapper">
+                <div className="inner-wrapper">
+                    <img src={product.imageURL} className="image"/>
+                    <h1 className="title">{product.title}</h1>
+                </div>  
+            </div>
         </div>
+        
         
     )
 }
